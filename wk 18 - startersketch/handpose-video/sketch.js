@@ -4,6 +4,7 @@ let hands = [];
 let indexPreviousX;
 let indexPreviousY;
 let drawing = [];
+let dots = [];
 
 function preload() {
   handPose = ml5.handPose({ flipped: true });
@@ -39,6 +40,8 @@ function draw() {
     if (d < 20) {
       stroke(255, 140, 15);
       strokeWeight(8);
+
+      // for (dots == 100)
 
       line(index.x, index.y, indexPreviousX, indexPreviousY);
 
